@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    font-family: "Cairo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    font-family: "Cairo", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    padding: 0.4rem 1.7rem;
+    font-size: 16px;
+    }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 15rem;
+}
+
+.start-now{
+    background-color: rgba(238, 123, 115, 1);
+    color: white;
+    font-weight: 700;
+}
+
+.start-now:hover{
+    background-color: rgba(200, 100, 100, 1);
+}
+
+.hero{
+    background-image: url("img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    text-align: right;
+    color: white;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.hero-first-line{
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.hero-or{
+    vertical-align: middle;
+    font-size: 22px;
+    background-color: rgba(0, 110, 255, 1);
+    padding: 8px 20px;
+    border-radius: 50%;
+}
+
+.hero-second-line{
+    margin-top: 70px;
+    font-size: 34px;
+    font-weight: 600;
+
+}
+
+.cta-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta{
+    background-color: white;
+    text-align: center;
+    line-height: 80px;
+    margin-top: -180px;
+    padding: 80px 160px;
+    border-radius: 20px;
+}
+
+.cta-first-line{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cta-second-line{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cta-button{
+    font-size: 18px;
+    color: white;
+    background-color: rgba(21, 79, 156, 1);
+    font-weight: 700;
+    padding: 0.6rem 2rem;
+}
+
+.cta-button:hover{
+    background-color: rgb(16, 59, 116);
+}
+
+.status{
+    text-align: center;
+}
+
+.status-first-line{
+    font-weight: 500;
+    font-size: 36px;
+    margin: 90px;
+}
+
+.word-highlight{
+    background-image: url("img/word-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+}
+
+.Statistics{
+display: flex;
+justify-content: center;
+column-gap: 110px;
+}
+
+.status-box{
+    width: 250px;
+    span{
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba(78, 126, 118, 1);
+    }
+
+    p{
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
+
+.tests-header{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.test-container{
+    display: flex;
+    justify-content: center;
+}
+.tests{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: fit-content;
+}
+
+.test-box{
+    width: fit-content;
+}
+
+.test-title{
+    font-size: 24;
+    font-weight: 700;
+    color: rgba(26, 101, 158, 1);
+    text-align: right;
+}
+
+.footer-section{
+display: flex;
+justify-content: space-between;
+margin: 130px 350px;
+}
+
+.footer-socials *{
+margin-right: 10px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 50px;
+    width: 700px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+.popup-box h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.popup-box p {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inputs-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.inputs-section div{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    label{
+        font-size: 14px;
+        font-weight: 700;
+        padding: 15px 0;
+    }
+
+    input {
+    font-family: "Cairo", serif;
+    text-align: right;
+        direction: rtl;
+        border: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.number-countryid{
+    display: flex;
+}
+
+#countryid{
+    display: inline;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+#companyList{
+    text-align: right;
+    direction: rtl;
+    width: auto;
+}
+
+#companyName{
+    text-align: right;
+}
+
+.popup-box button {
+    background-color: rgba(21, 79, 156, 1);
+    color: white;
+    border: none;
+    padding: 0.6rem 2rem;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.popup-box button:hover {
+    background-color: rgb(16, 59, 116);
+}
+
+.popup-box button:disabled {
+    background-color: rgba(21, 79, 156, 0.5);
+    color: rgba(255, 255, 255, 0.6);
+    cursor: not-allowed;
+    border: 1px solid rgba(21, 79, 156, 0.3);
+}
+

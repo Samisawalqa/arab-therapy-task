@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "b0f59b49-24f3-4a24-a4a8-3d69e66cfc98",
+		"name": "Form Submit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7878071"
+	},
+	"item": [
+		{
+			"name": "https://stg.arabtherapy.com/api/v1/forms/submit/9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"abdtest2@gmail.com\",\n  \"first_name\": \"Abd\",\n  \"last_name\": \"Test\",\n  \"mobile\": \"+962799884433\",\n  \"organization_name\": \"fdsgdfg d\",\n  \"company_size\": \"1000 عضو\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://stg.arabtherapy.com/api/v1/forms/submit/9"
+			},
+			"response": []
+		}
+	]
+}

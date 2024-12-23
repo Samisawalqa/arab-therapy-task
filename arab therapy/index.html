@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arab Therapy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <button class="start-now">ابدأ الآن</button>
+            <button>تسجيل الدخول</button>
+        </div>
+        <img src="img/logo.svg" alt="">
+    </div>
+
+    <div class="hero">
+        <div class="hero-first-line">
+            هل تهتم شركتك بدعم نفسية و<br>إنتاجئة الموظفين ؟
+            <span class="hero-or">أو</span>
+        </div>
+        <div class="hero-second-line">
+            . انضم للشركات المتقدمة في عنايتها بالموظفين
+        </div>
+    </div>
+
+
+    <div class="cta-box">
+        <div class="cta">
+            <div class="cta-first-line">نقدم افضل المعايير العالمية بلسان عربي</div>
+            <div class="cta-second-line">يتم تدريب كافة الأخصائيين  والإشراف عليهم من قبل أطباء عرب في ألمانيا</div>
+            <button class="cta-button" onclick="openPopup()">أطلب حساب تجريبي</button>
+        </div>
+    </div>
+
+    <div class="status">
+        <div class="status-first-line">يعد <span class="word-highlight">القلق</span> من أكثر الإضطرابات النفسية شيوعًا</div>
+
+        <div class="Statistics">
+            <div class="status-box">
+                <span>58 مليون</span>
+                <p>طفل تم تشخيصه بالقلق.</p>
+            </div>
+            <div class="status-box">
+                <span>25%</span>
+                <p>يتلقى شخص واحد تقريباً من بين كل 4 أشخاص يعانون من اضطرابات القلق العلاج المناسب.</p>
+            </div>
+            <div class="status-box">
+                <span>64%</span>
+                <p> من الأشخاص المصابين بالقلق أو أحد اضطرابات القلق يتعافون بعد تلقي العلاج المناسب</p>
+            </div>
+            <div class="status-box">
+                <span>301 مليون</span>
+                <p>مليون شخص حول العالم يعانون من القلق.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="tests-header">اختبارات عرب ثيرابي</h1>
+
+    <div class="test-container">
+        <div class="tests">
+
+            <div class="test-box">
+                <img src="img/test1.png" alt="">
+                <div class="test-title">اختبار الاكتئاب بين الأزواج</div>
+            </div>
+
+            <div class="test-box">
+                <img src="img/test2.png" alt="">
+                <div class="test-title">اختبار الاكتئاب العائلي</div>
+            </div>
+
+            <div class="test-box">
+                <img src="img/test3.png" alt="">
+                <div class="test-title">اختبار النفسية العام</div>
+            </div>
+            
+            <div class="test-box">
+                <img src="img/test4.png" alt="">
+                <div class="test-title">اختبار التوتر</div>
+            </div>
+
+        </div>
+    </div>
+        
+    <footer class="footer-section">
+        <div class="footer-socials">
+            <img src="img/facebook.svg" alt="">
+            <img src="img/youtube.svg" alt="">
+            <img src="img/twitter.svg" alt="">
+            <img src="img/instagram.svg" alt="">
+        </div>
+        <div class="footer-links">
+            <div class="footer-link">تواصل معنا</div>
+            <div class="footer-link">الشروط والأحكام</div>
+            <div class="footer-link">سياسة الخصوصية</div>
+            <div class="footer-link">أسئلة شائعة</div>
+            <div class="footer-link">من نحن</div>
+            <div class="footer-link">الرئيسية</div>
+        </div>
+    </footer>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <h2>أدخل معلوماتك واطلب حساب تجريبي</h2>
+            <div class="inputs-section">
+                <div>
+                    <label for="lastname">الاسم الأخير</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="الاسم الأخير">
+                </div>
+                <div>
+                    <label for="firstname">الاسم الأول</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="الاسم الأول">
+                </div>
+                <div>
+                    <label for="email">البريد الإلكتروني (الخاص بالعمل)</label>
+                    <input type="email" name="email" id="email" placeholder="أدخل البريد الإلكتروني">
+                </div>
+                <div>
+                    <label for="phoneNumber">رقم الهاتف </label>
+                    <div class="number-countryid">
+                        <select id="countryid">
+                            <option value="+962">jordan</option>
+                        </select>
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="أدخل رقم الهاتف">
+                    </div>
+                </div>
+                <div>
+                    <label for="companyName">اسم المؤسسة</label>
+                    <input list="text" name="companyName" id="companyName" placeholder="أدخل اسم المؤسسة">
+                </div>
+                <div>
+                    <label for="companySize">حجم المؤسسة</label>
+                    <input list="companyList" name="companySize" id="companySize" placeholder="أختر حجم الشركة">
+                    <datalist id="companyList">
+                        <option value="صغيرة"></option>
+                        <option value="متوسطة"></option>
+                        <option value="كبيرة"></option>
+                    </datalist>
+                </div>
+            </div>
+            <p>"تحتاج Arab Therapy - عرب ثيرابي إلى معلومات الاتصال التي تقدمها لنا للتواصل معك بشأن منتجاتنا وخدماتنا. يمكنك إلغاء الاشتراك وايقاف التواصل ما بيننا في أي وقت. للحصول على معلومات حول كيفية إلغاء الاشتراك، بسبب ممارسات الخصوصية لدينا وتعهدنا بحماية خصوصيتك، يرجى مراجعة سياسة الخصوصية الخاصة بنا."</p>
+            <button id="submit-request" disabled>اطلب حساب تجريبي</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
